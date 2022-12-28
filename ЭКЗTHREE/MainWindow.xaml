@@ -1,0 +1,37 @@
+﻿<Window x:Class="ЭКЗTHREE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ЭКЗTHREE"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Login" Grid.Column="1" Grid.Row="1" Margin="0,19,224,102" />
+        <TextBlock Text="Password" Grid.Column="1" Grid.Row="1" Margin="0,60,202,61" />
+        <TextBlock Text="Code" Grid.Column="1" Grid.Row="1" Margin="0,100,224,21" RenderTransformOrigin="0.495,1.76" />
+
+        <TextBox x:Name="inputLogin" Grid.Row="1" Grid.Column="1" Margin="69,19,25,102"  KeyDown="inputLogin_KeyDown"/>
+        <PasswordBox x:Name="inputPassword" Grid.Row="1" Grid.Column="1" Margin="69,60,25,61" KeyDown="inputPassword_KeyDown" IsEnabled="False"/>
+        <TextBox x:Name="inputCode" Grid.Row="1" Grid.Column="1" Margin="69,100,119,21" IsEnabled="False"/>
+
+        <Button x:Name="inSign" Content="Вход" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Right" Margin="0,0,0,99" Width="63" Click="inSign_Click" IsEnabled="False"/>
+        <Button x:Name="cancl" Content="Отмена" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" Margin="0,0,0,99" Width="62" />
+        <Button x:Name="Code" Content="Получит код" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" Margin="154,99,25,0" Click="Code_Click" IsEnabled="False"/>
+
+        <Image Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Source="https://i.ebayimg.com/images/g/47cAAOSw62VZv-t4/s-l400.jpg" Grid.ColumnSpan="2" Margin="255,21,23,119" Grid.RowSpan="2"/>
+        <TextBlock Text="aaaaaaaaaaaaa" FontSize="50" Grid.ColumnSpan="2" Grid.Row="0" Margin="137,49,13,27.667"/>
+    </Grid>
+</Window>

@@ -1,0 +1,12 @@
+﻿<Window x:Class="ЭКЗTHREE.NoAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ЭКЗTHREE"
+        mc:Ignorable="d"
+        Title="NoAdmin" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="NeADMIN" FontSize="40" Margin="298,128,295,235"/>
+    </Grid>
+</Window>
